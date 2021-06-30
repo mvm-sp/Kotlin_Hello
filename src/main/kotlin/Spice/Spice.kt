@@ -26,3 +26,11 @@ val spices1 = listOf(
 val spice = Spice("cayenne", spiciness = "spicy")
 val spicelist = spices1.filter {it.heat < 5}
 fun makeSalt() = Spice("Salt")
+
+interface SpiceColor {
+    val color: Color
+}
+
+object YellowSpiceColor : SpiceColor {
+    override val color = Color.YELLOW
+}
